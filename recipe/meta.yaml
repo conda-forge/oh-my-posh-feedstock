@@ -1,5 +1,5 @@
 {% set name = "oh-my-posh" %}
-{% set version = "25.1.0" %}
+{% set version = "25.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/JanDeDobbeleer/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 006e5eebe43db8ad670ce43ce457ff1a34dd261005c6cf0900540cf85b372702
+  sha256: e8ef60bd2ba2d54b8168b0e85e4cc0dca20f226558ecccfe782f63c13d0c7ff2
 
 build:
   number: 0
