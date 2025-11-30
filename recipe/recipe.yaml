@@ -1,0 +1,38 @@
+schema_version: 1
+
+context:
+  version: 28.1.0
+
+package:
+  name: oh-my-posh
+  version: ${{ version }}
+
+source:
+  url: https://github.com/JanDeDobbeleer/oh-my-posh/archive/v${{ version }}.tar.gz
+  sha256: ece79b5b65629cde224676c245597716fd2314c8ade3d3e42955a9bcf1eff302
+
+build:
+  number: 0
+  skip: win
+
+requirements:
+  build:
+    - ${{ compiler('go-nocgo') }}
+    - go-licenses
+
+tests:
+  - script:
+      - oh-my-posh --help
+
+about:
+  license: MIT
+  license_file:
+    - COPYING
+    - license-files/
+  summary: Prompt theme engine for any shell
+  homepage: https://github.com/JanDeDobbeleer/oh-my-posh
+  repository: https://github.com/JanDeDobbeleer/oh-my-posh
+
+extra:
+  recipe-maintainers:
+    - danielnachun
