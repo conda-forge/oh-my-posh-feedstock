@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "29.36.0"
+  version: "29.37.0"
 
 package:
   name: oh-my-posh
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/JanDeDobbeleer/oh-my-posh/archive/v${{ version }}.tar.gz
-  sha256: 24c26c1819a4ee0a914bc5db1b42c86da569dc1cfa44c2bb5eb247870e47662c
+  sha256: d4a4aca01152c52c6459d3ca5adeb558406a23a2dd9b2734b331ae9fe2d0ec6d
 
 build:
   number: 0
